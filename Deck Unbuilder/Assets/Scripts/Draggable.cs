@@ -12,6 +12,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     private CanvasGroup canvasGroup;
     public Transform parentToReturnTo = null;
     public Transform CardUsed;
+    public Transform Deck;
     public float damage;
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -36,6 +37,10 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         if (parentToReturnTo == CardUsed)
         {
             rectTransform.SetParent(CardUsed);
+        }
+        else if (parentToReturnTo == Deck)
+        {
+            rectTransform.SetParent(Deck);
         }
         else
         {
