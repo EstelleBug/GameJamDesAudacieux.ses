@@ -304,6 +304,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentToReturnTo: {fileID: 0}
+  damage: -10
 --- !u!114 &-7591110799690408965
 MonoBehaviour:
   m_ObjectHideFlags: 0

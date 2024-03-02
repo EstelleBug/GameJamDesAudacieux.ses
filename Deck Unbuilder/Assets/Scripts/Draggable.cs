@@ -11,6 +11,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     private Image image;
     private CanvasGroup canvasGroup;
     public Transform parentToReturnTo = null;
+    public float damage;
 
     public void OnBeginDrag(PointerEventData eventData)
     {

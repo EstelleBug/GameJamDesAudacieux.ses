@@ -15,17 +15,27 @@ public class GameControl : MonoBehaviour
     {
         health = maxHealth;
     }
-    
+
+    void Start()
+    {
+        healthBar.SetHealth(health, maxHealth);
+    }
+
     void Update()
     {
         if (debugTakeDamage)
         {
             debugTakeDamage = false;
-            health -= 10f;
+            TakeDamage(-10f);
         }
 
         if (health < 0f) { health = 0f; }
 
         healthBar.SetHealth(health, maxHealth);
+    }
+
+    public void TakeDamage(float damage)
+    {
+        health += damage;
     }
 }
