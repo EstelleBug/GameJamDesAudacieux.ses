@@ -360,6 +360,8 @@
 "Assets/Scripts/CardHightlightAnim.cs"
 "Assets/Scripts/Draggable.cs"
 "Assets/Scripts/DropZone.cs"
+"Assets/Scripts/GameControl.cs"
+"Assets/Scripts/HealthBar.cs"
 -langversion:9.0
 
 /deterministic
