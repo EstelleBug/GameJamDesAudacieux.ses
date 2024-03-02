@@ -39,6 +39,9 @@ public class HealthBar : MonoBehaviour
 
     public void SetHealth(float health, float maxHealth)
     {
+        txtHealth.text = string.Format("{0:#0}",health);
+        txtMaxHealth.text = string.Format("/ {0:#0}", maxHealth);
+
         healthBarTransform.sizeDelta = new Vector2(health / maxHealth * healthbarWidthMax, healthbarHeightMax);
     }
 }
