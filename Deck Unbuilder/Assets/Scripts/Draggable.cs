@@ -11,6 +11,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     private Image image;
     private CanvasGroup canvasGroup;
     public Transform parentToReturnTo = null;
+    public Transform CardUsed;
     public float damage;
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -20,6 +21,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         rectTransform.SetParent(rectTransform.parent.parent);
 
         canvasGroup.blocksRaycasts = false;
+        Debug.Log("OnBeginDrag called");
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -31,7 +33,14 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     {
         image.color = new Color32(255, 255, 255, 255);
 
-        rectTransform.SetParent(parentToReturnTo);
+        if (parentToReturnTo == CardUsed)
+        {
+            rectTransform.SetParent(CardUsed);
+        }
+        else
+        {
+            rectTransform.SetParent(parentToReturnTo);
+        }
 
         canvasGroup.blocksRaycasts = true;
     }
