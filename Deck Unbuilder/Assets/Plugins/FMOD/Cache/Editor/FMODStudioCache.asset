@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-7746779986363361817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Unhappy Else
+  m_EditorClassIdentifier: 
+  Path: event:/Unhappy Else
+  Guid:
+    Data1: 1110705337
+    Data2: 1170397656
+    Data3: 1553597572
+    Data4: 384831804
+  Banks:
+  - {fileID: 3549382097652508512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 300
 --- !u!114 &-7403573814110518067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +42,10 @@ MonoBehaviour:
   Path: ../DeckUnbuilder FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638450802891397268
+  lastModified: 638450831515739452
   FileSizes:
   - Name: Desktop
-    Value: 754
+    Value: 1120
   Exists: 1
 --- !u!114 &-7248135785031445930
 MonoBehaviour:
@@ -47,6 +74,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &-6272703716056430596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Happy Else
+  m_EditorClassIdentifier: 
+  Path: event:/Happy Else
+  Guid:
+    Data1: 1974342280
+    Data2: 1288760308
+    Data3: -626295144
+    Data4: -1608196755
+  Banks:
+  - {fileID: 3549382097652508512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 650
+--- !u!114 &-2506877564737180853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Card Draw
+  m_EditorClassIdentifier: 
+  Path: event:/Card Draw
+  Guid:
+    Data1: -1498384109
+    Data2: 1111631701
+    Data3: 609539734
+    Data4: -2120726605
+  Banks:
+  - {fileID: 3549382097652508512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 250
+--- !u!114 &-2337672665578680130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Decrease Jauge
+  m_EditorClassIdentifier: 
+  Path: event:/Decrease Jauge
+  Guid:
+    Data1: 1138325212
+    Data2: 1304114847
+    Data3: 1213058470
+    Data4: -684494219
+  Banks:
+  - {fileID: 3549382097652508512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 860
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,13 +172,75 @@ MonoBehaviour:
   - {fileID: 3549382097652508512}
   EditorEvents:
   - {fileID: -7248135785031445930}
+  - {fileID: -2506877564737180853}
+  - {fileID: 5267639286792216357}
+  - {fileID: 8015084200633365524}
+  - {fileID: 3434133850571049776}
+  - {fileID: -6272703716056430596}
+  - {fileID: -7746779986363361817}
+  - {fileID: 2487072229722794590}
+  - {fileID: -2337672665578680130}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3549382097652508512}
   StringsBanks:
   - {fileID: -7403573814110518067}
-  cacheTime: 638450802891397268
+  cacheTime: 638450831515739452
   cacheVersion: 131609
+--- !u!114 &2487072229722794590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI Button Press
+  m_EditorClassIdentifier: 
+  Path: event:/UI Button Press
+  Guid:
+    Data1: 1140853444
+    Data2: 1230284783
+    Data3: -781130082
+    Data4: -808065328
+  Banks:
+  - {fileID: 3549382097652508512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 130
+--- !u!114 &3434133850571049776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Card Hover
+  m_EditorClassIdentifier: 
+  Path: event:/Card Hover
+  Guid:
+    Data1: 2120570742
+    Data2: 1117411774
+    Data3: 122230156
+    Data4: 1439004956
+  Banks:
+  - {fileID: 3549382097652508512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 175
 --- !u!114 &3549382097652508512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,8 +256,62 @@ MonoBehaviour:
   Path: ../DeckUnbuilder FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638450802891387280
+  lastModified: 638450831515668334
   FileSizes:
   - Name: Desktop
-    Value: 120576
+    Value: 209024
   Exists: 1
+--- !u!114 &5267639286792216357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Card Move
+  m_EditorClassIdentifier: 
+  Path: event:/Card Move
+  Guid:
+    Data1: 1665477946
+    Data2: 1165157263
+    Data3: -212011359
+    Data4: 1283740337
+  Banks:
+  - {fileID: 3549382097652508512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 300
+--- !u!114 &8015084200633365524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Increase Jauge
+  m_EditorClassIdentifier: 
+  Path: event:/Increase Jauge
+  Guid:
+    Data1: 1779958862
+    Data2: 1184630904
+    Data3: -399354958
+    Data4: 450060866
+  Banks:
+  - {fileID: 3549382097652508512}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 650

@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Yarn.Unity;
 
 public class TurnManager : MonoBehaviour
 {
@@ -35,7 +34,6 @@ public class TurnManager : MonoBehaviour
     private bool isPlayerAllowToDrop;
     private int currentNPCIndex;
 
-    private DialogueRunner runner;
 
     void Awake()
     {
@@ -58,8 +56,7 @@ public class TurnManager : MonoBehaviour
         ShowNextNPCCard();
 
         GameObject handGameObject = GameObject.Find("Hand");
-        runner = _instance.GetComponent<DialogueRunner>();
-
+        
         // Check if the parent game object is found
         if (handGameObject != null)
         {
@@ -134,31 +131,6 @@ public class TurnManager : MonoBehaviour
 
             EndTurn();
 
-
-            if (currentNPCIndex ==0)
-            {
-                runner.StartDialogue("Else1");
-            }
-
-            if (currentNPCIndex ==1)
-            {
-                runner.StartDialogue("Else2");
-            }
-
-            if (currentNPCIndex ==2)
-            {
-                runner.StartDialogue("Else3");
-            }
-
-            if (currentNPCIndex ==3)
-            {
-                runner.StartDialogue("Else4");
-            }
-
-            if (currentNPCIndex ==4)
-            {
-                runner.StartDialogue("Else5");
-            }
         }
 
     }
