@@ -21,4 +21,10 @@ public class GameOverScreen : MonoBehaviour
     {
         
     }
+
+    public void HideGameOver()
+    {
+        gameObject.SetActive(false);
+
+    }
 }
