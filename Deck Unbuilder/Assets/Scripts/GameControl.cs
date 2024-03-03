@@ -45,6 +45,6 @@ public class GameControl : MonoBehaviour
     public void GameOver()
     {
         GameOverScreen.Setup();
-        CardUsed.SetActive(true);
+        //CardUsed.SetActive(true);
     }
 }
