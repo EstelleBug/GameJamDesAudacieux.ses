@@ -35,7 +35,7 @@ public class DropZone : MonoBehaviour, IDropHandler
         {
             float cardDamage = draggedCard.damage;
 
-            if (gameObject.name == "CardDropArea" && !turnManager.IsNPCTurn())
+            if (gameObject.name == "CardDropArea" && !turnManager.IsNPCTurn()) //&& turnManager.IsPlayerAllowToDrop()
             {
                 // Move the card to the cardUsedEmpty position
                 draggedCard.parentToReturnTo = CardUsed.transform;
