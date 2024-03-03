@@ -362,7 +362,10 @@
 "Assets/Scripts/Draggable.cs"
 "Assets/Scripts/DropZone.cs"
 "Assets/Scripts/GameControl.cs"
+"Assets/Scripts/GameOverScreen.cs"
 "Assets/Scripts/HealthBar.cs"
+"Assets/Scripts/ScenesManager.cs"
+"Assets/Scripts/UIMenu.cs"
 -langversion:9.0
 
 /deterministic

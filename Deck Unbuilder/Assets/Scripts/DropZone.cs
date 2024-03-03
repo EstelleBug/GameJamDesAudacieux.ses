@@ -52,8 +52,8 @@ public class DropZone : MonoBehaviour, IDropHandler
                 }
                 else
                 {
-                    cardsInHand.Remove(draggedCard);
                     draggedCard.parentToReturnTo = Deck.transform;
+                    cardsInHand.Remove(draggedCard);
                     Debug.Log("Hand is full. Cannot add more cards.");
                 }
             }

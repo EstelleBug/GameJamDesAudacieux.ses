@@ -10,6 +10,8 @@ public class GameControl : MonoBehaviour
     float maxHealth = 100f;
 
     public bool debugTakeDamage;
+    public GameOverScreen GameOverScreen;
+    public GameObject CardUsed;
 
     void Awake()
     {
@@ -30,12 +32,19 @@ public class GameControl : MonoBehaviour
         }
 
         if (health < 0f) { health = 0f; }
-
+        else if (health > maxHealth) {  health = maxHealth; }
+        else if (health < maxHealth / 2) { GameOver(); }
         healthBar.SetHealth(health, maxHealth);
     }
 
     public void TakeDamage(float damage)
     {
         health += damage;
+    }
+
+    public void GameOver()
+    {
+        GameOverScreen.Setup();
+        CardUsed.SetActive(true);
     }
 }
