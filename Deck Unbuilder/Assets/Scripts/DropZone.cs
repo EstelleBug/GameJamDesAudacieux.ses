@@ -13,6 +13,7 @@ public class DropZone : MonoBehaviour, IDropHandler
     public int maxCardsInHand = 3;
 
     private List<Draggable> cardsInHand = new List<Draggable>();
+    private TurnManager turnManager;
 
     void Start()
     {
@@ -24,6 +25,7 @@ public class DropZone : MonoBehaviour, IDropHandler
                 cardsInHand.Add(card);
             }
         }
+        turnManager = TurnManager.Instance;
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -33,14 +35,15 @@ public class DropZone : MonoBehaviour, IDropHandler
         {
             float cardDamage = draggedCard.damage;
 
-            if (gameObject.name == "CardDropArea")
+            if (gameObject.name == "CardDropArea" && !turnManager.IsNPCTurn())
             {
                 // Move the card to the cardUsedEmpty position
                 draggedCard.parentToReturnTo = CardUsed.transform;
 
-                if (gameControl != null)
+                if (turnManager != null && gameControl != null)
                 {
                     gameControl.TakeDamage(cardDamage);
+                    turnManager.EndTurn();
                 }
             }
             else if (gameObject.name == "Hand")

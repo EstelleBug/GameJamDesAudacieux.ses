@@ -4,25 +4,69 @@ using UnityEngine;
 
 public class TurnManager : MonoBehaviour
 {
-    public List<Card> playerDeck;
-    public List<Card> npcDeck;
+    private static TurnManager _instance;
 
-    private List<Card> playerHand;
-    private List<Card> npcHand;
+    public static TurnManager Instance
+    {
+        get
+        {
+            if (_instance == null)
+            {
+                _instance = FindObjectOfType<TurnManager>();
+                if (_instance == null)
+                {
+                    GameObject go = new GameObject("TurnManager");
+                    _instance = go.AddComponent<TurnManager>();
+                }
+            }
+            return _instance;
+        }
+    }
+
+    public List<GameObject> playerDeck;
+
+    public List<GameObject> playerHand;
+    public List<GameObject> npcHand;
 
     private bool isNPCTurn;
+    private int currentNPCIndex;
+
+    void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
-        playerHand = new List<Card>();
-        npcHand = new List<Card>();
 
-        // Draw initial hands
-        //DrawInitialHand(playerHand, playerDeck);
-        //DrawInitialHand(npcHand, npcDeck);
-
-        // Start with NPC's turn
         isNPCTurn = true;
+        currentNPCIndex = 0;
+        ShowNextNPCCard();
+
+        GameObject handGameObject = GameObject.Find("Hand");
+
+        // Check if the parent game object is found
+        if (handGameObject != null)
+        {
+            // Find all cards in the "Hand" game object and add them to the playerHand list
+            Draggable[] cardsInHand = handGameObject.GetComponentsInChildren<Draggable>();
+            foreach (Draggable card in cardsInHand)
+            {
+                playerHand.Add(card.gameObject);
+            }
+        }
+        else
+        {
+            Debug.LogError("Parent game object with the name 'Hand' not found.");
+        }
     }
 
     void Update()
@@ -33,55 +77,42 @@ public class TurnManager : MonoBehaviour
         {
             NPCTurn();
         }
-        else
+        else if (!isNPCTurn && playerHand.Count == 3)
         {
-            PlayerTurn();
+            //Allow player to drop card
         }
+
     }
 
-    void PlayerTurn()
+    public bool IsNPCTurn()
     {
-        // Implement player's turn logic here
-
-        // EPlayer drops a card
+        return isNPCTurn;
     }
 
     void NPCTurn()
     {
-        // Implement NPC's turn logic here
-
-        // NPC shows card + 1
+        ShowNextNPCCard();
     }
 
-    void PlayCard(List<Card> hand, List<Card> deck)
+    void ShowNextNPCCard()
     {
-        if (hand.Count > 0)
+        if (npcHand.Count > 0)
         {
-            // Play the first card in hand (you can modify this logic based on your game rules)
-            Card cardToPlay = hand[0];
+            if (currentNPCIndex > 0)
+            {
+                npcHand[currentNPCIndex - 1].gameObject.SetActive(false);
+            }
 
-            // Perform actions based on the played card
+            npcHand[currentNPCIndex].gameObject.SetActive(true);
 
-            // Move the card to a discard pile or remove it from play
-            // (you'll need to implement these functions based on your game design)
+            currentNPCIndex = (currentNPCIndex + 1) % npcHand.Count;
 
-            // End the turn
             EndTurn();
         }
     }
 
-    void EndTurn()
+    public void EndTurn()
     {
         isNPCTurn = !isNPCTurn;
     }
-
-    /*void DrawInitialHand(List<Card> hand, List<Card> deck)
-    {
-        int initialHandSize = 3;
-
-        for (int i = 0; i < initialHandSize; i++)
-        {
-            DrawCard(hand, deck);
-        }
-    }*/
 }
