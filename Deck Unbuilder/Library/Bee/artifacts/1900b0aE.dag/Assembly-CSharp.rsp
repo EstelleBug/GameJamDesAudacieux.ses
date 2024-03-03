@@ -372,6 +372,7 @@
 -analyzer:"Library/PackageCache/dev.yarnspinner.unity@2.4.2/SourceGenerator/YarnSpinner.Unity.SourceCodeGenerator.dll"
 "Assets/Scripts/Card.cs"
 "Assets/Scripts/CardAnim.cs"
+"Assets/Scripts/DataDialogues.cs"
 "Assets/Scripts/Draggable.cs"
 "Assets/Scripts/DropZone.cs"
 "Assets/Scripts/GameControl.cs"
