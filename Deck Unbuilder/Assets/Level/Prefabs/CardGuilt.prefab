@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: damage
       value: -4
       objectReference: {fileID: 0}
+    - target: {fileID: 1681292177935201462, guid: 5a3746bd1dc4cbd498a0f51dcfe91a9e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 74864d7e30e054a47988d66cb837e6fd, type: 3}
     - target: {fileID: 3040076455344157953, guid: 5a3746bd1dc4cbd498a0f51dcfe91a9e, type: 3}
       propertyPath: m_text
       value: Faire culpabiliser
