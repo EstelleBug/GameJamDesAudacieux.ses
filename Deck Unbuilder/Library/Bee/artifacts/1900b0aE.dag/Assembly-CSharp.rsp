@@ -377,7 +377,6 @@
 "Assets/Scripts/GameControl.cs"
 "Assets/Scripts/GameOverScreen.cs"
 "Assets/Scripts/HealthBar.cs"
-"Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/ScenesManager.cs"
 "Assets/Scripts/TurnManager.cs"
 "Assets/Scripts/UIGameOver.cs"

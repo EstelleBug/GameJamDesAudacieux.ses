@@ -305,7 +305,7 @@ MonoBehaviour:
   parentToReturnTo: {fileID: 0}
   CardUsed: {fileID: 0}
   Deck: {fileID: 0}
-  damage: -10
+  damage: -2
 --- !u!114 &-7591110799690408965
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -29,6 +29,7 @@ public class TurnManager : MonoBehaviour
     public List<GameObject> npcHand;
 
     private bool isNPCTurn;
+    private bool isPlayerAllowToDrop;
     private int currentNPCIndex;
 
     void Awake()
@@ -77,11 +78,20 @@ public class TurnManager : MonoBehaviour
         {
             NPCTurn();
         }
-        else if (!isNPCTurn && playerHand.Count == 3)
+        else 
         {
-            //Allow player to drop card
+            if( playerHand.Count == 2)
+            {
+                isPlayerAllowToDrop = true;
+            }
+            isPlayerAllowToDrop = false;
         }
 
+    }
+
+    public bool IsPlayerAllowToDrop()
+    {
+        return isPlayerAllowToDrop;
     }
 
     public bool IsNPCTurn()
