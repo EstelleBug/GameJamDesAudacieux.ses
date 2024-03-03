@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="MixerGroup" id="{122b3691-2bfb-4649-992a-03a935318eec}">
+		<property name="volume">
+			<value>-6</value>
+		</property>
+		<property name="name">
+			<value>Jauge Sounds</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{7fa47f2d-93de-4dd7-b169-6379a6dda542}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{5e6a6b15-6cbe-413d-af3a-824ccbbb97be}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{e333f068-22db-4236-892c-2e516b1e96b6}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{7fa47f2d-93de-4dd7-b169-6379a6dda542}">
+		<relationship name="effects">
+			<destination>{3c634a31-c15f-49db-a900-e3977b6af0c6}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{5e6a6b15-6cbe-413d-af3a-824ccbbb97be}" />
+	<object class="MixerBusFader" id="{3c634a31-c15f-49db-a900-e3977b6af0c6}" />
+</objects>
