@@ -10,6 +10,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
 {
     private RectTransform rectTransform;
     private Image image;
+    private Image positiveImage;
     private CanvasGroup canvasGroup;
     public Transform parentToReturnTo = null;
     public Transform CardUsed;
@@ -58,9 +59,24 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
-        image = GetComponentInChildren<Image>();
+        image = transform.Find("Image").GetComponentInChildren<Image>();
+        positiveImage = transform.Find("PositiveImage").GetComponentInChildren<Image>();
         canvasGroup = GetComponent<CanvasGroup>();
         parentToReturnTo = rectTransform.parent;
+    }
+
+    void Update()
+    {
+        if (damage <=  0) 
+        {
+            image.enabled = true;
+            positiveImage.enabled = false;
+        }
+        else if (damage > 0)
+        {
+            image.enabled = false;
+            positiveImage.enabled = true;
+        }
 
     }
 }
