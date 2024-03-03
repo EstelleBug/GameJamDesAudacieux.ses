@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using FMODUnity;
 
 
 public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
@@ -14,12 +15,15 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     public Transform CardUsed;
     public Transform Deck;
     public float damage;
+    [SerializeField] private StudioEventEmitter CardHover;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         image.color = new Color32(255, 255, 255, 170);
 
         rectTransform.SetParent(rectTransform.parent.parent);
+
+        CardHover.Play();
 
         canvasGroup.blocksRaycasts = false;
         Debug.Log("OnBeginDrag called");
