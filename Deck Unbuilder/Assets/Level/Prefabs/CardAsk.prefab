@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: damage
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1681292177935201462, guid: 5a3746bd1dc4cbd498a0f51dcfe91a9e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0707d813067eb57409c1971e5f8bda21, type: 3}
     - target: {fileID: 3040076455344157953, guid: 5a3746bd1dc4cbd498a0f51dcfe91a9e, type: 3}
       propertyPath: m_text
       value: Interroger
