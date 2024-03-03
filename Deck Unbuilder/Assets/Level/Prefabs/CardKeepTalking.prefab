@@ -20,6 +20,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CardKeepTalking
       objectReference: {fileID: 0}
+    - target: {fileID: 3370188010981362121, guid: 5a3746bd1dc4cbd498a0f51dcfe91a9e, type: 3}
+      propertyPath: m_TagString
+      value: playAgain
+      objectReference: {fileID: 0}
     - target: {fileID: 6748943100009323097, guid: 5a3746bd1dc4cbd498a0f51dcfe91a9e, type: 3}
       propertyPath: m_text
       value: Permet de garder la parole et de rejouer une carte
