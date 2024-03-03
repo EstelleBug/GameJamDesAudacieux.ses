@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{7f4fffd2-ddff-4d27-a973-42870ce71d8e}">
+		<property name="assetPath">
+			<value>Hover_Card_v2_variation_04_wav.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.15625850340136055</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{87a3ca64-203c-4144-8d0b-672550e77370}</destination>
+		</relationship>
+	</object>
+</objects>
