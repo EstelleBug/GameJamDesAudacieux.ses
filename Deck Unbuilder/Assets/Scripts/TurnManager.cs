@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class TurnManager : MonoBehaviour
 {
@@ -29,6 +30,8 @@ public class TurnManager : MonoBehaviour
     public List<GameObject> npcHand;
 
     public GameControl gameControl;
+
+    public TMP_Text dialogueText;
 
     private bool isNPCTurn;
     private bool isPlayerAllowToDrop;
@@ -127,12 +130,56 @@ public class TurnManager : MonoBehaviour
 
             npcHand[currentNPCIndex].gameObject.SetActive(true);
 
+            DisplayDialogueForCurrentNPC();
+
             currentNPCIndex = (currentNPCIndex + 1) % npcHand.Count;
 
             EndTurn();
-
         }
+    }
 
+    void DisplayDialogueForCurrentNPC()
+    {
+        switch (currentNPCIndex)
+        {
+            case 0:
+                SetDialogueText(DataDialogues.DialogElse0);
+                break;
+            case 1:
+                SetDialogueText(DataDialogues.DialogElse1);
+                break;
+            case 2:
+                SetDialogueText(DataDialogues.DialogElse2);
+                break;
+            case 3:
+                SetDialogueText(DataDialogues.DialogElse3);
+                break;
+            case 4:
+                SetDialogueText(DataDialogues.DialogElse4);
+                break;
+            case 5:
+                SetDialogueText(DataDialogues.DialogElse5);
+                break;
+            case 6:
+                SetDialogueText(DataDialogues.DialogElseGameOver);
+                break;
+            // Add more cases if needed
+            default:
+                SetDialogueText(DataDialogues.DefaultDialogContent);
+                break;
+        }
+    }
+
+    void SetDialogueText(string text)
+    {
+        if (dialogueText != null)
+        {
+            dialogueText.text = text;
+        }
+        else
+        {
+            Debug.LogError("DialogueText component not assigned.");
+        }
     }
 
     public void EndTurn()
