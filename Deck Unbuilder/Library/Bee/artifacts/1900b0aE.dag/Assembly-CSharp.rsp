@@ -381,6 +381,7 @@
 "Assets/Scripts/TurnManager.cs"
 "Assets/Scripts/UIGameOver.cs"
 "Assets/Scripts/UIMenu.cs"
+"Assets/Scripts/UIWin.cs"
 -langversion:9.0
 
 /deterministic

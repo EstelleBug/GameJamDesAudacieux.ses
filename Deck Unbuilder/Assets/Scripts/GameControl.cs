@@ -36,6 +36,7 @@ public class GameControl : MonoBehaviour
         else if (health > maxHealth) {  health = maxHealth; }
         healthBar.SetHealth(health, maxHealth);
     }
+    public float GetHealth() { return health; }
 
     public void TakeDamage(float damage)
     {
@@ -45,5 +46,10 @@ public class GameControl : MonoBehaviour
     public void GameOver()
     {
         GameOverScreen.Setup();
+    }
+
+    public void Win()
+    {
+        ScenesManager.instance.LoadScene(ScenesManager.Scene.Win);
     }
 }
