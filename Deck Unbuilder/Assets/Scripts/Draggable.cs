@@ -15,6 +15,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     public Transform CardUsed;
     public Transform Deck;
     public float damage;
+    public float positiveDamage;
     [SerializeField] private StudioEventEmitter CardHover;
 
     public void OnBeginDrag(PointerEventData eventData)
