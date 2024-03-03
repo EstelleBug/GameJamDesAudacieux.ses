@@ -2132,6 +2132,7 @@ MonoBehaviour:
   - {fileID: 1830788493}
   - {fileID: 512635857}
   - {fileID: 27921468}
+  gameControl: {fileID: 0}
 --- !u!4 &894576965
 Transform:
   m_ObjectHideFlags: 0
@@ -2267,7 +2268,7 @@ MonoBehaviour:
       Data4: -1399758060
     Path: event:/Test
   Event: 
-  PlayEvent: 1
+  PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
   TriggerOnce: 0

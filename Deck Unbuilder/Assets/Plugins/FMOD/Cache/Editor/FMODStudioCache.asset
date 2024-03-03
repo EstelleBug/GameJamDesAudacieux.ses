@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: ../DeckUnbuilder FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638450599645733260
+  lastModified: 638450802891397268
   FileSizes:
   - Name: Desktop
     Value: 754
@@ -69,7 +69,7 @@ MonoBehaviour:
   - {fileID: 3549382097652508512}
   StringsBanks:
   - {fileID: -7403573814110518067}
-  cacheTime: 638450599645733260
+  cacheTime: 638450802891397268
   cacheVersion: 131609
 --- !u!114 &3549382097652508512
 MonoBehaviour:
@@ -86,7 +86,7 @@ MonoBehaviour:
   Path: ../DeckUnbuilder FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638450599645694042
+  lastModified: 638450802891387280
   FileSizes:
   - Name: Desktop
     Value: 120576
