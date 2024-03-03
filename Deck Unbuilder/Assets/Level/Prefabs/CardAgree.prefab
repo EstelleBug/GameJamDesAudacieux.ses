@@ -22,7 +22,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6748943100009323097, guid: 5a3746bd1dc4cbd498a0f51dcfe91a9e, type: 3}
       propertyPath: m_text
-      value: Un peu d'empathie dans ce monde de brutes.
+      value: "Un peu d'empathie dans ce monde de brutes\u2026"
       objectReference: {fileID: 0}
     - target: {fileID: 7592388863041408768, guid: 5a3746bd1dc4cbd498a0f51dcfe91a9e, type: 3}
       propertyPath: m_Pivot.x
