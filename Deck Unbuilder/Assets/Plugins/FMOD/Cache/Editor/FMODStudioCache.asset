@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: ../DeckUnbuilder FMOD/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638450863093761981
+  lastModified: 638450992206897115
   FileSizes:
   - Name: Desktop
-    Value: 1168
+    Value: 1248
   Exists: 1
 --- !u!114 &-7248135785031445930
 MonoBehaviour:
@@ -101,6 +101,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 650
+--- !u!114 &-4687401170980693216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/OST_Win
+  m_EditorClassIdentifier: 
+  Path: event:/OST_Win
+  Guid:
+    Data1: -843934404
+    Data2: 1236413859
+    Data3: -2135903338
+    Data4: -749070795
+  Banks:
+  - {fileID: 3549382097652508512}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 310151
 --- !u!114 &-2506877564737180853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -181,12 +208,14 @@ MonoBehaviour:
   - {fileID: 2487072229722794590}
   - {fileID: -2337672665578680130}
   - {fileID: 1427267362133221493}
+  - {fileID: 3508546414510222302}
+  - {fileID: -4687401170980693216}
   EditorParameters: []
   MasterBanks:
   - {fileID: 3549382097652508512}
   StringsBanks:
   - {fileID: -7403573814110518067}
-  cacheTime: 638450863093761981
+  cacheTime: 638450992206897115
   cacheVersion: 131609
 --- !u!114 &1427267362133221493
 MonoBehaviour:
@@ -269,6 +298,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 175
+--- !u!114 &3508546414510222302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/OST
+  m_EditorClassIdentifier: 
+  Path: event:/OST
+  Guid:
+    Data1: -1216494017
+    Data2: 1103711422
+    Data3: -1145879619
+    Data4: 198639102
+  Banks:
+  - {fileID: 3549382097652508512}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 190000
 --- !u!114 &3549382097652508512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,10 +340,10 @@ MonoBehaviour:
   Path: ../DeckUnbuilder FMOD/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638450863093752011
+  lastModified: 638450992206885479
   FileSizes:
   - Name: Desktop
-    Value: 217536
+    Value: 6981600
   Exists: 1
 --- !u!114 &5267639286792216357
 MonoBehaviour:

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c8351fa2-00e8-4294-8a92-e268122a3b8d}">
+		<property name="assetPath">
+			<value>Realizer.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>310.15183673469386</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{87a3ca64-203c-4144-8d0b-672550e77370}</destination>
+		</relationship>
+	</object>
+</objects>

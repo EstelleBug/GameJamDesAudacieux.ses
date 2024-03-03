@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{99b81616-bc87-42d0-ab55-0b629836db5a}">
+		<property name="assetPath">
+			<value>Valse Gymnopedie.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>191.76489795918368</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{87a3ca64-203c-4144-8d0b-672550e77370}</destination>
+		</relationship>
+	</object>
+</objects>

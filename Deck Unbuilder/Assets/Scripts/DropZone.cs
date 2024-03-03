@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using FMODUnity;
 
 public class DropZone : MonoBehaviour, IDropHandler
 {
@@ -14,6 +15,7 @@ public class DropZone : MonoBehaviour, IDropHandler
 
     private List<Draggable> cardsInHand = new List<Draggable>();
     private TurnManager turnManager;
+    [SerializeField] private StudioEventEmitter DropZoneCard;
 
     void Start()
     {
@@ -39,6 +41,7 @@ public class DropZone : MonoBehaviour, IDropHandler
             {
                 // Move the card to the cardUsedEmpty position
                 draggedCard.parentToReturnTo = CardUsed.transform;
+                DropZoneCard.Play();
 
                 if (turnManager != null && gameControl != null)
                 {

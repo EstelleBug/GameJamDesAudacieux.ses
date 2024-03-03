@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class GameControl : MonoBehaviour
 {
@@ -13,6 +14,10 @@ public class GameControl : MonoBehaviour
     public bool debugTakeDamage;
     public GameOverScreen GameOverScreen;
     public GameObject CardUsed;
+    [SerializeField] private StudioEventEmitter DecreaseJauge;
+    [SerializeField] private StudioEventEmitter IncreaseJauge;
+    [SerializeField] private StudioEventEmitter UnhappyElse;
+    [SerializeField] private StudioEventEmitter HappyElse;
 
     void Awake()
     {
@@ -41,6 +46,16 @@ public class GameControl : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health += damage;
+        if (damage < 0)
+        {
+            DecreaseJauge.Play();
+            UnhappyElse.Play();
+        }
+        else
+        {
+            IncreaseJauge.Play();
+            HappyElse.Play();
+        }
     }
 
     public void GameOver()
