@@ -58,7 +58,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     void Start()
     {
         rectTransform = GetComponent<RectTransform>();
-        image = GetComponent<Image>();
+        image = GetComponentInChildren<Image>();
         canvasGroup = GetComponent<CanvasGroup>();
         parentToReturnTo = rectTransform.parent;
 
