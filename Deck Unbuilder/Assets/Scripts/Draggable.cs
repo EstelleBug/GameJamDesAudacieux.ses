@@ -39,7 +39,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     {
         image.color = new Color32(255, 255, 255, 255);
 
-        if (parentToReturnTo == CardUsed)
+        /*if (parentToReturnTo == CardUsed)
         {
             rectTransform.SetParent(CardUsed);
         }
@@ -50,7 +50,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         else
         {
             rectTransform.SetParent(parentToReturnTo);
-        }
+        }*/
 
         canvasGroup.blocksRaycasts = true;
     }

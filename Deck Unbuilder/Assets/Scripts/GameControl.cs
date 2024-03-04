@@ -93,7 +93,6 @@ public class GameControl : MonoBehaviour
 
         health = originalhealth;
         turnManager.Restart();
-        //GameOverScreen.HideGameOver();
     }
 
     public void Win()

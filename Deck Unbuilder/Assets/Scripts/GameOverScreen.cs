@@ -7,12 +7,19 @@ public class GameOverScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     public void Setup()
     {
+        RectTransform rectTransform = GetComponent<RectTransform>();
+
         gameObject.SetActive(true);
+        rectTransform.anchorMin = new Vector2(0f, 0f);
+        rectTransform.anchorMax = new Vector2(1f, 1f);
+
+        rectTransform.offsetMin = new Vector2(0f, 60f); // Left, Bottom
+        rectTransform.offsetMax = new Vector2(0f, -79f); // Right, Top
+
 
     }
 
@@ -24,7 +31,8 @@ public class GameOverScreen : MonoBehaviour
 
     public void HideGameOver()
     {
-        gameObject.SetActive(false);
+        //gameObject.SetActive(false);
+        transform.position = new Vector3(1000f, 1000f, 0f);
         Debug.Log("Close GameOver");
     }
 }
