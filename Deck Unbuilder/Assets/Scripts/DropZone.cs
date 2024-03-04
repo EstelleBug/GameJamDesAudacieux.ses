@@ -53,6 +53,11 @@ public class DropZone : MonoBehaviour, IDropHandler
                 if (turnManager != null && gameControl != null)
                 {
                     gameControl.TakeDamage(cardDamage);
+                    //turnManager.EndTurn();
+                }
+
+                if (draggedCard.gameObject.tag != "playAgain")
+                {
                     turnManager.EndTurn();
                 }
             }
