@@ -58,6 +58,7 @@ public class DropZone : MonoBehaviour, IDropHandler
                 if (draggedCard.gameObject.tag != "playAgain")
                 {
                     turnManager.EndTurn();
+                    turnManager.PlayAgainCardPlayed();
                 }
             }
             else if (gameObject.name == "Hand")

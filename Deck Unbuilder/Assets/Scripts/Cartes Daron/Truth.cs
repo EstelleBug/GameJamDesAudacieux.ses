@@ -7,24 +7,37 @@ public class Truth : MonoBehaviour
 {
     public TurnManager turnmanager;
     public TMP_Text dialogueText;
+    public Draggable card;
 
-
-    private void Update()
+    public void Start()
     {
-        DisplayDialogueForCurrentPC();
+         card = GetComponent<Draggable>();
+    }
+
+    public void Update()
+    {
+        if (card.damage < 0)
+        {
+            DisplayDialogueForCurrentPC();
+        }
+
+        else
+        {
+            DisplayPDialogueForCurrentPC();
+        }
     }
 
     void DisplayDialogueForCurrentPC()
     {
         switch (turnmanager.currentNPCIndex)
         {
-            case 0:
+           /* case 0:
                 SetDialogueText(DaddyDialogues.Truth01);
                 break;
             case 1:
                 SetDialogueText(DaddyDialogues.Truth0);
                 break;
-            case 2:
+            */case 2:
                 SetDialogueText(DaddyDialogues.Truth1);
                 break;
             case 3:
@@ -44,6 +57,41 @@ public class Truth : MonoBehaviour
                 SetDialogueText(DataDialogues.DefaultDialogContent);
                 break;
         }
+    }
+
+        void DisplayPDialogueForCurrentPC()
+        {
+            switch (turnmanager.currentNPCIndex)
+            {
+               /* case 0:
+                    SetDialogueText(DaddyDialogues.Truth01);
+                    break;
+                case 1:
+                    SetDialogueText(DaddyDialogues.Truth0);
+                    break;
+                */case 2:
+                    SetDialogueText(DaddyDialogues.TruthP1);
+                    break;
+                case 3:
+                    SetDialogueText(DaddyDialogues.TruthP2);
+                    break;
+                case 4:
+                    SetDialogueText(DaddyDialogues.TruthP3);
+                    break;
+                case 5:
+                    SetDialogueText(DaddyDialogues.TruthP4);
+                    break;
+                case 6:
+                    SetDialogueText(DaddyDialogues.TruthP5);
+                    break;
+                // Add more cases if needed
+                default:
+                    SetDialogueText(DataDialogues.DefaultDialogContent);
+                    break;
+            }
+
+        }
+
         void SetDialogueText(string text)
         {
             if (dialogueText != null)
@@ -56,4 +104,4 @@ public class Truth : MonoBehaviour
             }
         }
     }
-}
+

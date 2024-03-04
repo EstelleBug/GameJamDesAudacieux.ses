@@ -6,7 +6,6 @@ using TMPro;
 public class TurnManager : MonoBehaviour
 {
     private static TurnManager _instance;
-
     public static TurnManager Instance
     {
         get
@@ -37,6 +36,7 @@ public class TurnManager : MonoBehaviour
     private bool isPlayerAllowToDrop;
     public int currentNPCIndex;
 
+    private int indexDialogue;
 
     void Awake()
     {
@@ -104,6 +104,16 @@ public class TurnManager : MonoBehaviour
 
     }
 
+    public void PlayAgainCardPlayed()
+    {
+        indexDialogue = currentNPCIndex + 1;
+
+    }
+    public int GetIndexedDialogue()
+    {
+        return indexDialogue;
+
+    }
     public bool IsPlayerAllowToDrop()
     {
         return isPlayerAllowToDrop;

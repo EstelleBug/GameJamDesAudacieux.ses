@@ -16,7 +16,7 @@ public class KeepTalking : MonoBehaviour
     // Update is called once per frame
     void DisplayDialogueForCurrentPC()
     {
-        switch (turnmanager.currentNPCIndex)
+        switch (turnmanager.GetIndexedDialogue())
         {
             case 0:
                 SetDialogueText(DaddyDialogues.Truth01);

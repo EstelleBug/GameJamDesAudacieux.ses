@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class DaddyDialogues : MonoBehaviour
 {
+    //Dialogues Négatifs
     public const string Truth1 = "Les gens qui saisissent pas les opportunités ça réussit pas dans la vie, tu sais.";
     public const string Truth2 = "Crois-en mon expérience, dans le doute, il faut toujours dire oui.";
     public const string Truth3 = "Se réorienter à ton âge, c'est pas raisonnable. Tu ferais mieux de rester dans le commerce.";
@@ -30,14 +31,48 @@ public class DaddyDialogues : MonoBehaviour
     public const string Deny4 = "Ce sont des lubies. Je suis ton père, je sais mieux que toi ce qui est bon. Tu dois faire ce que je te dis.";
     public const string Deny5 = "Moi ce que je sens, c'est qu'on va te récupérer à la rue dans 3 ans.";
 
-    public const string Keep1 = "Écoute, ma fille :";
-    public const string Keep2 = "Déjà :";
-    public const string Keep3 = "Voilà ce que tu vas faire :";
-    public const string Keep4 = "Primo :";
-    public const string Keep5 = "Alors :";
+    public const string Keep1 = "Bla bla bla bla";
+    public const string Keep2 = "Bla bla";
+    public const string Keep3 = "Bla bla bla";
+    public const string Keep4 = "Bla bla bla bla bla bla bla";
+    public const string Keep5 = "Blah";
 
     public const string End1 = "Comment ça c'est pas ce que tu veux faire ? Tu dis n'importe quoi. Allez, tu rappelles maintenant.";
     public const string End2 = "Transmettre des histoires ? C'est toi qui m'en fais là ! C'est non, tu continues en commerce un point c'est tout.";
     public const string End3 = "Non. Non, c'est voué à l'échec, on va pas jeter des années d'efforts pour tes caprices.";
 
+    //Dialogues Positifs
+    public const string TruthP1 = "Les gens qui saisissent pas les opportunités ça réussit pas dans la vie, tu sais.";
+    public const string TruthP2 = "Crois-en mon expérience, dans le doute, il faut toujours dire oui.";
+    public const string TruthP3 = "Se réorienter à ton âge, c'est pas raisonnable. Tu ferais mieux de rester dans le commerce.";
+    public const string TruthP4 = "Comédienne ! Mais c'est un métier de chômeurs et de communistes !";
+    public const string TruthP5 = "Tu ne le sais sans doute pas mais seuls 5% des gens réussissent dans ce métier. Alors moi, je n'y crois pas trop.";
+
+    public const string OpinionP1 = "Oui";
+    public const string OpinionP2 = "C bieng";
+    public const string OpinionP3 = "Carrément";
+    public const string OpinionP4 = "GG ma fille";
+    public const string OpinionP5 = "Is ok l'art";
+
+    public const string GuiltP1 = "Dépêche-toi, c'est un bon poste, j'ai dû graisser des pattes pour te l'avoir.";
+    public const string GuiltP2 = "Là, tu déconnes ! C'est une opportunité en or ! Pense un peu à nous, pense à ta mère !";
+    public const string GuiltP3 = "Arrête tes états d'âme ! On est pas venus jusqu'ici, à s'échiner au travail toutes ces années pour vous, tout ça pour que tu décides de gâcher ta vie !";
+    public const string GuiltP4 = "Tout mais pas ça ! Tu veux tuer ta mère, c'est ça ? Elle qui a travaillé dur ! Elle s'est privée pour toi !";
+    public const string GuiltP5 = "15 ans que je trime à faire la caisse, le bricolage, le taxi. Tu crois que j'ai réussi moi ? ";
+
+    public const string DenyP1 = "Pas le temps, pas le temps… Tss. Aller au cinéma, ça tu as bien le temps par contre.";
+    public const string DenyP2 = "Ah non, ça suffit de tergiverser comme ça. Serre les dents un bon coup, et rappelle-le !";
+    public const string DenyP3 = "Mais non. Tu doutes juste, ça te passera. ";
+    public const string DenyP4 = "Ce sont des lubies. Je suis ton père, je sais mieux que toi ce qui est bon. Tu dois faire ce que je te dis.";
+    public const string DenyP5 = "Moi ce que je sens, c'est qu'on va te récupérer à la rue dans 3 ans.";
+
+    public const string KeepP1 = "Écoute, ma fille :";
+    public const string KeepP2 = "Déjà :";
+    public const string KeepP3 = "Voilà ce que tu vas faire :";
+    public const string KeepP4 = "Primo :";
+    public const string KeepP5 = "Alors :";
+
+    public const string EndP1 = "Comment ça c'est pas ce que tu veux faire ? Tu dis n'importe quoi. Allez, tu rappelles maintenant.";
+    public const string EndP2 = "Transmettre des histoires ? C'est toi qui m'en fais là ! C'est non, tu continues en commerce un point c'est tout.";
+    public const string EndP3 = "Non. Non, c'est voué à l'échec, on va pas jeter des années d'efforts pour tes caprices.";
 }
