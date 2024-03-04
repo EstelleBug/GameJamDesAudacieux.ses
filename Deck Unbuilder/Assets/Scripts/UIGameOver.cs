@@ -7,6 +7,7 @@ public class UIGameOver : MonoBehaviour
 {
     [SerializeField] Button _btnRestart;
     public GameOverScreen GameOverScreen;
+    public GameControl gameControl;
 
     void Start()
     {
@@ -16,8 +17,7 @@ public class UIGameOver : MonoBehaviour
 
     private void RestartGame()
     {
-        GameOverScreen.HideGameOver();
-        //Add card changed to deck
+        gameControl.RestartGame();
     }
 
     private void QuitGame()

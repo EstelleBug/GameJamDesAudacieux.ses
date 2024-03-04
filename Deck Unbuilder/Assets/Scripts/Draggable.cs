@@ -28,7 +28,6 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
         CardHover.Play();
 
         canvasGroup.blocksRaycasts = false;
-        Debug.Log("OnBeginDrag called");
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -78,5 +77,6 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
             positiveImage.enabled = true;
         }
 
+        rectTransform.SetParent(parentToReturnTo);
     }
 }

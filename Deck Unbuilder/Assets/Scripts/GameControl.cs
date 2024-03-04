@@ -63,6 +63,29 @@ public class GameControl : MonoBehaviour
         GameOverScreen.Setup();
     }
 
+    public void RestartGame()
+    {
+        GameOverScreen.HideGameOver();
+
+        if (CardUsed != null)
+        {
+            DropZone dropZone = CardUsed.GetComponent<DropZone>();
+
+            if (dropZone != null)
+            {
+                dropZone.MoveCardsToDeck();
+            }
+            else
+            {
+                Debug.LogError("DropZone component not found on CardUsed GameObject.");
+            }
+        }
+        else
+        {
+            Debug.LogError("CardUsed GameObject not found.");
+        }
+    }
+
     public void Win()
     {
         ScenesManager.instance.LoadScene(ScenesManager.Scene.Win);

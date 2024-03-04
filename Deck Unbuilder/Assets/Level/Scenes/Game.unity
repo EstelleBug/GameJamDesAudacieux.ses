@@ -266,7 +266,7 @@ MonoBehaviour:
   healthBar: {fileID: 399485830}
   debugTakeDamage: 0
   GameOverScreen: {fileID: 1750356892}
-  CardUsed: {fileID: 0}
+  CardUsed: {fileID: 454763517}
   DecreaseJauge: {fileID: 657453666}
   IncreaseJauge: {fileID: 662696292}
   UnhappyElse: {fileID: 191340503}
@@ -1485,9 +1485,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameControl: {fileID: 70492783}
-  CardUsed: {fileID: 0}
-  Hand: {fileID: 454763518}
-  Deck: {fileID: 0}
+  CardUsed: {fileID: 454763518}
+  Hand: {fileID: 201565264}
+  Deck: {fileID: 1463069189}
   maxCardsInHand: 3
   DropZoneCard: {fileID: 0}
 --- !u!114 &454763520
@@ -1789,6 +1789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _btnRestart: {fileID: 875138262}
   GameOverScreen: {fileID: 1750356892}
+  gameControl: {fileID: 70492783}
 --- !u!1 &543420547
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,7 +11,7 @@ public class DropZone : MonoBehaviour, IDropHandler
     public Transform CardUsed;
     public Transform Hand;
     public Transform Deck;
-    public int maxCardsInHand = 3;
+    public int maxCardsInHand = 4;
 
     private List<Draggable> cardsInHand = new List<Draggable>();
 
@@ -53,7 +53,6 @@ public class DropZone : MonoBehaviour, IDropHandler
                 if (turnManager != null && gameControl != null)
                 {
                     gameControl.TakeDamage(cardDamage);
-                    //turnManager.EndTurn();
                 }
 
                 if (draggedCard.gameObject.tag != "playAgain")
@@ -85,6 +84,24 @@ public class DropZone : MonoBehaviour, IDropHandler
                 }
             }
 
+        }
+    }
+
+    public void MoveCardsToDeck()
+    {
+        Draggable[] cardsInCardUsed = CardUsed.GetComponentsInChildren<Draggable>();
+
+        foreach (Draggable card in cardsInCardUsed)
+        {
+            if (card.gameObject.tag == "Start")
+            {
+                card.parentToReturnTo = Hand.transform;
+            }
+            else
+            {
+                card.parentToReturnTo = Deck.transform;
+
+            }
         }
     }
 }
