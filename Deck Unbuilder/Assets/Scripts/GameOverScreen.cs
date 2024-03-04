@@ -32,7 +32,7 @@ public class GameOverScreen : MonoBehaviour
     public void HideGameOver()
     {
         //gameObject.SetActive(false);
-        transform.position = new Vector3(1000f, 1000f, 0f);
+        transform.position = new Vector3(5000f, 5000f, 0f);
         Debug.Log("Close GameOver");
     }
 }
