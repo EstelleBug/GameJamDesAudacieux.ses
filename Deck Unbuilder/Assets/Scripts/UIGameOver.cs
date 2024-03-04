@@ -17,6 +17,7 @@ public class UIGameOver : MonoBehaviour
     private void RestartGame()
     {
         GameOverScreen.HideGameOver();
+        //Add card changed to deck
     }
 
     private void QuitGame()

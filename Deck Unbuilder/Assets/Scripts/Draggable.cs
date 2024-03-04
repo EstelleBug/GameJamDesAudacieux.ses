@@ -67,7 +67,7 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
 
     void Update()
     {
-        if (damage <=  0) 
+        if (damage <= 0)
         {
             image.enabled = true;
             positiveImage.enabled = false;

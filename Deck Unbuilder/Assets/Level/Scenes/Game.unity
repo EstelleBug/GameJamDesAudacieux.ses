@@ -739,6 +739,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463069189}
     m_Modifications:
+    - target: {fileID: 69993522007600485, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 844659370754159855, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: m_Name
       value: CardKeepTalking (1)
@@ -750,7 +754,7 @@ PrefabInstance:
     - target: {fileID: 3951250473927039355, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: CardUsed
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 454763518}
     - target: {fileID: 5485402397765644838, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -854,6 +858,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463069189}
     m_Modifications:
+    - target: {fileID: 69993522007600485, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 844659370754159855, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: m_Name
       value: CardKeepTalking (3)
@@ -865,7 +873,7 @@ PrefabInstance:
     - target: {fileID: 3951250473927039355, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: CardUsed
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 454763518}
     - target: {fileID: 5485402397765644838, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1780,7 +1788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _btnRestart: {fileID: 875138262}
-  GameOverScreen: {fileID: 0}
+  GameOverScreen: {fileID: 1750356892}
 --- !u!1 &543420547
 GameObject:
   m_ObjectHideFlags: 0
@@ -3360,6 +3368,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CardOpinion
       objectReference: {fileID: 0}
+    - target: {fileID: 5752013611720847570, guid: 2bb8720267170a246b77bb852fef343d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8790536109080806604, guid: 2bb8720267170a246b77bb852fef343d, type: 3}
       propertyPath: Deck
       value: 
@@ -3367,7 +3379,7 @@ PrefabInstance:
     - target: {fileID: 8790536109080806604, guid: 2bb8720267170a246b77bb852fef343d, type: 3}
       propertyPath: CardUsed
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 454763518}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3464,6 +3476,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463069189}
     m_Modifications:
+    - target: {fileID: 69993522007600485, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 844659370754159855, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: m_Name
       value: CardKeepTalking
@@ -3475,7 +3491,7 @@ PrefabInstance:
     - target: {fileID: 3951250473927039355, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: CardUsed
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 454763518}
     - target: {fileID: 5485402397765644838, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3666,6 +3682,10 @@ PrefabInstance:
     - target: {fileID: 1398633217134784061, guid: f4a134e377c37bd4a87ae0b552db4346, type: 3}
       propertyPath: CardUsed
       value: 
+      objectReference: {fileID: 454763518}
+    - target: {fileID: 2685819264051829283, guid: f4a134e377c37bd4a87ae0b552db4346, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3316212727351018409, guid: f4a134e377c37bd4a87ae0b552db4346, type: 3}
       propertyPath: m_Name
@@ -3856,6 +3876,10 @@ PrefabInstance:
     - target: {fileID: 6087264251185999696, guid: 0f3577506956dfd4faa30dd2a666d65c, type: 3}
       propertyPath: CardUsed
       value: 
+      objectReference: {fileID: 454763518}
+    - target: {fileID: 7086217709556636494, guid: 0f3577506956dfd4faa30dd2a666d65c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7572577314800812740, guid: 0f3577506956dfd4faa30dd2a666d65c, type: 3}
       propertyPath: m_Name
@@ -4003,6 +4027,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463069189}
     m_Modifications:
+    - target: {fileID: 69993522007600485, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 844659370754159855, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: m_Name
       value: CardKeepTalking (4)
@@ -4014,7 +4042,7 @@ PrefabInstance:
     - target: {fileID: 3951250473927039355, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: CardUsed
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 454763518}
     - target: {fileID: 5485402397765644838, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4118,6 +4146,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463069189}
     m_Modifications:
+    - target: {fileID: 69993522007600485, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 844659370754159855, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: m_Name
       value: CardKeepTalking (2)
@@ -4129,7 +4161,7 @@ PrefabInstance:
     - target: {fileID: 3951250473927039355, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: CardUsed
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 454763518}
     - target: {fileID: 5485402397765644838, guid: 1bc607f46c41e734d8df3908f25da0b8, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5130,6 +5162,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5153699476058077837, guid: d396c9f396af3394eb196e7a510f8ead, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5532076043786527495, guid: d396c9f396af3394eb196e7a510f8ead, type: 3}
       propertyPath: m_Name
       value: CardTruth
@@ -5141,7 +5177,7 @@ PrefabInstance:
     - target: {fileID: 8189969361329082003, guid: d396c9f396af3394eb196e7a510f8ead, type: 3}
       propertyPath: CardUsed
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 454763518}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5421,10 +5457,14 @@ PrefabInstance:
     - target: {fileID: 2154024913839665067, guid: e08e799b853e00145b0d5459d7c4fb6d, type: 3}
       propertyPath: CardUsed
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 454763518}
     - target: {fileID: 2344649553812341311, guid: e08e799b853e00145b0d5459d7c4fb6d, type: 3}
       propertyPath: m_Name
       value: CardEnd
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155230984242568117, guid: e08e799b853e00145b0d5459d7c4fb6d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7426746993749738742, guid: e08e799b853e00145b0d5459d7c4fb6d, type: 3}
       propertyPath: m_Pivot.x
