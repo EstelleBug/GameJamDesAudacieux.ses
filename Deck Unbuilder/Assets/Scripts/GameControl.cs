@@ -65,6 +65,11 @@ public class GameControl : MonoBehaviour
         GameOverScreen.Setup();
     }
 
+    public void HideGameOver()
+    {
+        GameOverScreen.HideGameOver();
+    }
+
     public void RestartGame()
     {
 

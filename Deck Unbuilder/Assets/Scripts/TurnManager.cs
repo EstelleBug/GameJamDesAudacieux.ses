@@ -81,6 +81,8 @@ public class TurnManager : MonoBehaviour
         isNPCTurn = true;
         currentNPCIndex = 0;
         ShowNextNPCCard();
+
+        gameControl.HideGameOver();
     }
 
     void Update()
