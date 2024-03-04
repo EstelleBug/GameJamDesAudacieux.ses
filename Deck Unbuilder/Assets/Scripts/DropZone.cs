@@ -11,7 +11,7 @@ public class DropZone : MonoBehaviour, IDropHandler
     public Transform CardUsed;
     public Transform Hand;
     public Transform Deck;
-    public int maxCardsInHand = 4;
+    public int maxCardsInHand;
 
     private List<Draggable> cardsInHand = new List<Draggable>();
 
@@ -60,6 +60,11 @@ public class DropZone : MonoBehaviour, IDropHandler
                     turnManager.EndTurn();
                     turnManager.PlayAgainCardPlayed();
                 }
+
+                Debug.Log("Before Removal: " + cardsInHand.Count);
+                cardsInHand.Remove(draggedCard);
+                //Debug.Log("After Removal: " + cardsInHand.Count);
+
             }
             else if (gameObject.name == "Hand")
             {
@@ -71,20 +76,17 @@ public class DropZone : MonoBehaviour, IDropHandler
                 else
                 {
                     draggedCard.parentToReturnTo = Deck.transform;
-                    cardsInHand.Remove(draggedCard);
+                    draggedCard.GetComponent<RectTransform>().anchoredPosition = new Vector2(75f, -105f);
                     Debug.Log("Hand is full. Cannot add more cards.");
                 }
             }
             else
             {
                 draggedCard.parentToReturnTo = this.transform;
-
-                if (cardsInHand.Contains(draggedCard))
-                {
-                    cardsInHand.Remove(draggedCard);
-                }
+                draggedCard.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             }
 
+            //draggedCard.rectTransform.SetParent(draggedCard.parentToReturnTo);
         }
     }
 

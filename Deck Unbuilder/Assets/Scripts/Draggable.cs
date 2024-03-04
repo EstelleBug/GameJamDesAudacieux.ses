@@ -39,19 +39,6 @@ public class Draggable : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDra
     {
         image.color = new Color32(255, 255, 255, 255);
 
-        /*if (parentToReturnTo == CardUsed)
-        {
-            rectTransform.SetParent(CardUsed);
-        }
-        else if (parentToReturnTo == Deck)
-        {
-            rectTransform.SetParent(Deck);
-        }
-        else
-        {
-            rectTransform.SetParent(parentToReturnTo);
-        }*/
-
         canvasGroup.blocksRaycasts = true;
     }
 

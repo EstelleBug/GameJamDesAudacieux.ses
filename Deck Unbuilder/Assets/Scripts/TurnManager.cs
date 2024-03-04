@@ -93,14 +93,14 @@ public class TurnManager : MonoBehaviour
         {
             NPCTurn();
         }
-        /*else
+        else
         {
 
             if (currentNPCIndex == npcHand.Count && gameControl.GetHealth() > 0f)
             {
                 gameControl.Win();
             }
-        }*/
+        }
 
     }
 

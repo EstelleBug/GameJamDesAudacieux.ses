@@ -840,7 +840,7 @@ MonoBehaviour:
   CardUsed: {fileID: 454763518}
   Hand: {fileID: 201565264}
   Deck: {fileID: 1463069189}
-  maxCardsInHand: 3
+  maxCardsInHand: 4
   DropZoneCard: {fileID: 0}
 --- !u!1 &217682363
 GameObject:
@@ -2484,7 +2484,7 @@ MonoBehaviour:
   CardUsed: {fileID: 454763518}
   Hand: {fileID: 201565264}
   Deck: {fileID: 1463069189}
-  maxCardsInHand: 3
+  maxCardsInHand: 4
   DropZoneCard: {fileID: 284139094}
 --- !u!1 &399485826
 GameObject:
@@ -6936,7 +6936,7 @@ MonoBehaviour:
   CardUsed: {fileID: 454763518}
   Hand: {fileID: 201565264}
   Deck: {fileID: 1463069189}
-  maxCardsInHand: 3
+  maxCardsInHand: 4
   DropZoneCard: {fileID: 0}
 --- !u!114 &1463069192
 MonoBehaviour:
@@ -7621,7 +7621,7 @@ MonoBehaviour:
   CardUsed: {fileID: 0}
   Hand: {fileID: 201565264}
   Deck: {fileID: 1645804183}
-  maxCardsInHand: 3
+  maxCardsInHand: 4
   DropZoneCard: {fileID: 0}
 --- !u!114 &1645804186
 MonoBehaviour:
