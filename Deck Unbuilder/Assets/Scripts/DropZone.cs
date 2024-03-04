@@ -100,7 +100,7 @@ public class DropZone : MonoBehaviour, IDropHandler
             else
             {
                 card.parentToReturnTo = Deck.transform;
-
+                card.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             }
         }
     }

@@ -76,6 +76,13 @@ public class TurnManager : MonoBehaviour
         }
     }
 
+    public void Restart()
+    {
+        isNPCTurn = true;
+        currentNPCIndex = 0;
+        ShowNextNPCCard();
+    }
+
     void Update()
     {
         // Check for end of game condition

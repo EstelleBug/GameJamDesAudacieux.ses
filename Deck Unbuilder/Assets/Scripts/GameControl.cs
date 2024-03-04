@@ -14,6 +14,7 @@ public class GameControl : MonoBehaviour
     public bool debugTakeDamage;
     public GameOverScreen GameOverScreen;
     public GameObject CardUsed;
+    public TurnManager turnManager;
     [SerializeField] private StudioEventEmitter DecreaseJauge;
     [SerializeField] private StudioEventEmitter IncreaseJauge;
     [SerializeField] private StudioEventEmitter UnhappyElse;
@@ -39,6 +40,7 @@ public class GameControl : MonoBehaviour
 
         if (health <= 0f) { GameOver(); }
         else if (health > maxHealth) {  health = maxHealth; }
+        
         healthBar.SetHealth(health, maxHealth);
     }
     public float GetHealth() { return health; }
@@ -65,7 +67,6 @@ public class GameControl : MonoBehaviour
 
     public void RestartGame()
     {
-        GameOverScreen.HideGameOver();
 
         if (CardUsed != null)
         {
@@ -84,6 +85,10 @@ public class GameControl : MonoBehaviour
         {
             Debug.LogError("CardUsed GameObject not found.");
         }
+
+        health = originalhealth;
+        turnManager.Restart();
+        //GameOverScreen.HideGameOver();
     }
 
     public void Win()
