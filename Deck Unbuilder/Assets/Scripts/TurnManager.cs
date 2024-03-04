@@ -35,7 +35,7 @@ public class TurnManager : MonoBehaviour
 
     private bool isNPCTurn;
     private bool isPlayerAllowToDrop;
-    private int currentNPCIndex;
+    public int currentNPCIndex;
 
 
     void Awake()
