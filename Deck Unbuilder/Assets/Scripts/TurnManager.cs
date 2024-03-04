@@ -93,23 +93,14 @@ public class TurnManager : MonoBehaviour
         {
             NPCTurn();
         }
-        else
+        /*else
         {
-            if (playerHand.Count == 2)
-            {
-                isPlayerAllowToDrop = true;
-            }
-            else
-            {
-                isPlayerAllowToDrop = false;
 
-                if (currentNPCIndex == npcHand.Count && gameControl.GetHealth() > 0f)
-                {
-                    gameControl.Win();
-                }
+            if (currentNPCIndex == npcHand.Count && gameControl.GetHealth() > 0f)
+            {
+                gameControl.Win();
             }
-
-        }
+        }*/
 
     }
 
@@ -132,18 +123,27 @@ public class TurnManager : MonoBehaviour
     {
         if (npcHand.Count > 0)
         {
-            if (currentNPCIndex > 0)
+            if (currentNPCIndex > 0 && npcHand[currentNPCIndex - 1] != null)
             {
                 npcHand[currentNPCIndex - 1].gameObject.SetActive(false);
             }
 
-            npcHand[currentNPCIndex].gameObject.SetActive(true);
+            if (npcHand[currentNPCIndex] != null)
+            {
+                npcHand[currentNPCIndex].gameObject.SetActive(true);
 
-            DisplayDialogueForCurrentNPC();
+                DisplayDialogueForCurrentNPC();
 
-            currentNPCIndex = (currentNPCIndex + 1) % npcHand.Count;
+                currentNPCIndex = (currentNPCIndex + 1) % npcHand.Count;
 
-            EndTurn();
+                if (currentNPCIndex == 0)
+                {
+                    gameControl.Win();
+                    return;
+                }
+
+                EndTurn();
+            }
         }
     }
 
